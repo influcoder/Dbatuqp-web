@@ -1,0 +1,39 @@
+* {
+  background-color: #e1c2aa;
+}
+.menu {
+  display: flex;
+  justify-content: end;
+  font-size: x-large;
+  list-style: none;
+  font-weight: bold;
+  margin: 10px;
+}
+.menu-i {
+  margin-left: 4rem;
+}
+.menu-i > a {
+  text-decoration: none;
+  color: #693e3c;
+}
+.random-papers {
+  margin: 3%;
+  width: 90%;
+  height: 100vh;
+  background-color: oldlace;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 2%;
+}
+.random-papers > div {
+  width: 95%;
+  height: 70%;
+  background-color: #693e3c;
+}
+footer {
+  height: 30vh;
+  width: 102.5%;
+  background-color: rgba(28, 27, 27, 0.616);
+  margin: -2%;
+}
