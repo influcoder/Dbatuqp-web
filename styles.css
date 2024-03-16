@@ -1,62 +1,79 @@
 * {
-  background-color: #e1c2aa;
+  background-color: rgba(255, 250, 241, 0.74);
 }
+
+body {
+  font-family: "Pacifico", sans-serif;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  visibility: hidden;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 5px;
+}
+
 .menu {
   display: flex;
   justify-content: end;
-  font-size: x-large;
+  font-size: clamp(10px, 3vw, 18px);
   list-style: none;
-  font-weight: bold;
-  margin: 10px;
+  font-weight: 700;
+  margin: 5px;
+  padding: 5px;
 }
+
 .menu-i {
-  margin-left: 4rem;
+  margin-left: 2rem;
 }
+
 .menu-i > a {
   text-decoration: none;
-  color: #693e3c;
+  color: #000000b7;
+  transition: all 0.5s ease;
 }
-.drop-down {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  margin-top: 30px;
-  min-width: 100px;
-  z-index: 1;
-}
-
-.drop-down a {
-  color: #693e3c;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.drop-down a:hover {
-  color: #f1f1f1;
-}
-
-.menu-i:hover .drop-down {
-  display: block;
-}
-.papers {
+.random-papers {
   margin: 3%;
   width: 90%;
   height: 100vh;
-  background-color: oldlace;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   padding: 2%;
+  background: #00000024;
+  margin-top: 5%;
+  align-items: center;
 }
-.papers > div {
+.random-papers > div {
   width: 95%;
   height: 70%;
   background-color: #693e3c;
 }
+
 footer {
   height: 30vh;
-  width: 102.5%;
+  width: 102%;
   background-color: rgba(28, 27, 27, 0.616);
-  margin: -2%;
+  margin: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  align-self: flex-end;
+  background: transparent;
+}
+
+.container p {
+  font-size: clamp(8px, 4vw, 20px);
+  background: transparent;
+  color: #fff;
 }
