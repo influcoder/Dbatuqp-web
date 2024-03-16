@@ -5,6 +5,7 @@
 body {
   font-family: "Pacifico", sans-serif;
   overflow-x: hidden;
+  height: 100vh;
 }
 
 ::-webkit-scrollbar {
@@ -69,28 +70,54 @@ nav {
 .papers {
   margin: 1%;
   width: 96%;
-  height: 100vh;
+  height: 150vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   padding: 2%;
   background: #00000024;
-  margin-top: 5%;
+  margin-top: 2%;
   align-items: center;
 }
+
 .papers > div {
-  width: 90%;
+  width: 80%;
   height: 80%;
   transition: all 0.5s ease;
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #fff;
 }
 
 .papers > div:hover {
   transform: scale(1.1);
 }
 
+.download-btn {
+  float: right;
+  margin-bottom: 25px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.8s;
+}
+
+.preview {
+  width: 100%;
+  height: 200px;
+  background-color: #f0f0f0;
+  margin-bottom: 10px;
+}
+
 footer {
-  height: 30vh;
-  width: 102%;
+  height: 25vh;
+  width: 100%;
   background-color: rgba(28, 27, 27, 0.616);
   margin: 1%;
   display: flex;
@@ -98,12 +125,12 @@ footer {
   justify-content: center;
 }
 
-.container {
+footer > div {
   align-self: flex-end;
   background: transparent;
 }
 
-.container p {
+footer p {
   font-size: clamp(8px, 4vw, 20px);
   background: transparent;
   color: #fff;
