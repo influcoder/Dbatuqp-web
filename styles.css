@@ -70,7 +70,7 @@ nav {
 .papers {
   margin: 1%;
   width: 96%;
-  height: 150vh;
+  height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
