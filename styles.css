@@ -39,7 +39,6 @@ nav {
   color: #000000b7;
   transition: all 0.5s ease;
 }
-<<<<<<< HEAD
 .drop-down {
   display: none;
   position: absolute;
@@ -63,9 +62,6 @@ nav {
 .menu-i:hover .drop-down {
   display: block;
 }
-
-=======
-
 .menu-i > a:hover {
   font-size: clamp(12px, 3vw, 20px);
 }
@@ -73,7 +69,6 @@ nav {
 .papers {
   margin: 1%;
   width: 96%;
->>>>>>> ce6859f5de5cd742da953568922e051128c1e519
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -84,12 +79,9 @@ nav {
   align-items: center;
 }
 .papers > div {
-<<<<<<< HEAD
-=======
   width: 90%;
   height: 80%;
   transition: all 0.5s ease;
->>>>>>> ce6859f5de5cd742da953568922e051128c1e519
 }
 
 .papers > div:hover {
