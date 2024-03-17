@@ -148,12 +148,7 @@
           const img = document.createElement("img");
           img.src = thumbnailUrl;
           img.alt = `Thumbnail for Page ${pageNumber}`;
-          const downloadLink = document.createElement("a");
-          downloadLink.href = pdfUrl;
-          downloadLink.textContent = "Download PDF";
-          downloadLink.download = pdfUrl.split("/").pop();
           container.appendChild(img);
-          container.appendChild(downloadLink);
         } catch (error) {
           console.error("Error adding thumbnail:", error);
         }
